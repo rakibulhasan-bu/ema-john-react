@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <nav className="bg-[#1C2B35]">
-      <div className="my-container flex h-20  items-center justify-between">
+      <div className="my-container flex h-20 w-full  items-center justify-between">
         <img src="/public/assets/Logo.svg" alt="" />
-        <div className="flex gap-8  text-lg text-white">
+        <div className="hidden flex-col gap-8 text-lg text-white  lg:flex lg:flex-row">
           <NavLink to={`/`}>Home</NavLink>
           <NavLink to={`/shop`}>Order</NavLink>
           <NavLink to={`/order-review`}>Order Review</NavLink>

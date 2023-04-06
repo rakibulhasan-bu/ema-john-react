@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="my-container flex h-[87vh] items-center justify-between">
-      <div className="space-y-12">
+    <div className="my-container flex h-[87vh] flex-col items-center justify-between gap-4 lg:flex-row">
+      <div className="space-y-4 lg:space-y-12">
         <div>
           <h2 className="text-[#FF9900]">Sale up to 70% off</h2>
         </div>
