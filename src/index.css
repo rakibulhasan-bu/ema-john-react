@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global css styles for this project */
+.button {
+  background: #ff9900;
+  padding: 0.5em 1.1em;
+}
+.my-container {
+  max-width: 85%;
+  margin: 0 auto;
+}
