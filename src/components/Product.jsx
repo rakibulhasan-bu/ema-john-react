@@ -1,7 +1,7 @@
 import React from "react";
 
-const Product = ({ product }) => {
-  const { img, name, price, seller, ratings } = product;
+const Product = ({ product, handleOrder }) => {
+  const { id, img, name, price, seller, ratings } = product;
   return (
     <div className="relative rounded-lg border border-slate-300 p-2">
       <img className="rounded-lg pb-2" src={img} alt={name} />
@@ -10,7 +10,10 @@ const Product = ({ product }) => {
         <h3 className="pb-2 font-medium">Price: ${price}</h3>
         <p className="text-sm">Manufacturer: {seller}</p>
         <p className="mb-7 text-sm">Rating: {ratings}star</p>
-        <button className="absolute bottom-0 left-0 flex w-full items-center justify-center gap-2 rounded-b-lg bg-orange-200 py-1 text-center hover:bg-orange-300">
+        <button
+          onClick={() => handleOrder(id)}
+          className="absolute bottom-0 left-0 flex w-full items-center justify-center gap-2 rounded-b-lg bg-orange-200 py-1 text-center hover:bg-orange-300"
+        >
           Add to cart
           <svg
             xmlns="http://www.w3.org/2000/svg"
