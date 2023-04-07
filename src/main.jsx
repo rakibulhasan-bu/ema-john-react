@@ -24,6 +24,7 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+        loader: () => fetch("/public/fakeData/products.json"),
       },
       {
         path: "/order-review",
